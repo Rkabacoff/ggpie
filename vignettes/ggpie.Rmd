@@ -36,9 +36,9 @@ By default, pie slices are labeled with percentages and a legend is created.
 
 The position of the labels is controlled with the `offset` parameter. It captures the distance of the label from the origin of the pie. 
 
-* A value of zero is centered in each slice (see above).   
-* A value of 1 is centered on the radius of the pie.   
-* A value greater than 1 will place the label outside the pie.  
+* A value of 0.5 is centered in each slice (see above).   
+* A value of 1.0 is centered on the radius of the pie.   
+* A value greater than 1.0 will place the label outside the pie.  
 
 ```{r}
 ggpie(mpg, class, offset = 1 )
@@ -68,6 +68,9 @@ ggpie(mpg, class,
       title="Automobile Models by Class") +
   scale_fill_brewer(palette = "Dark2")
 ```
+
+Note the use of the `ggplot2` color brewer function to change the color scheme above.
+See [scale_color_brewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html) for details.
 
 ## Mulitiple Pie Charts
 

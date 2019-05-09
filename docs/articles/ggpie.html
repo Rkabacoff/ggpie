@@ -87,11 +87,11 @@
 <p>By default, pie slices are labeled with percentages and a legend is created.</p>
 <p>The position of the labels is controlled with the <code>offset</code> parameter. It captures the distance of the label from the origin of the pie.</p>
 <ul>
-<li>A value of zero is centered in each slice (see above).<br>
+<li>A value of 0.5 is centered in each slice (see above).<br>
 </li>
-<li>A value of 1 is centered on the radius of the pie.<br>
+<li>A value of 1.0 is centered on the radius of the pie.<br>
 </li>
-<li>A value greater than 1 will place the label outside the pie.</li>
+<li>A value greater than 1.0 will place the label outside the pie.</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="../reference/ggpie.html">ggpie</a></span>(mpg, class, <span class="dt">offset =</span> <span class="dv">1</span> )</a></code></pre></div>
 <p><img src="ggpie_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
@@ -111,6 +111,7 @@
 <a class="sourceLine" id="cb5-8" title="8">      <span class="dt">title=</span><span class="st">"Automobile Models by Class"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-9" title="9"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">"Dark2"</span>)</a></code></pre></div>
 <p><img src="ggpie_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
+<p>Note the use of the <code>ggplot2</code> color brewer function to change the color scheme above. See <a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">scale_color_brewer</a> for details.</p>
 </div>
 <div id="mulitiple-pie-charts" class="section level2">
 <h2 class="hasAnchor">
