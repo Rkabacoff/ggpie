@@ -9,8 +9,8 @@ single and faceted pie charts can be created.
 To download this package use the following code:
 
 ```
-if(!require(devtools)){
-   install.packages("devtools")
+if(!require(remotes)){
+   install.packages("remotes")
 }
-devtools::install_github("rkabacoff/ggpie")
+remotes::install_github("rkabacoff/ggpie")
 ```
